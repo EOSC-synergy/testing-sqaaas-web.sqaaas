@@ -1,0 +1,11 @@
+services:
+  node:
+    container_name: node
+    environment: []
+    hostname: sqaaas-web
+    image: node
+    volumes:
+    - source: ./
+      target: /sqaaas-web
+      type: bind
+version: '3.7'
