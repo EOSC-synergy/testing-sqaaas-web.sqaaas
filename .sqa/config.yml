@@ -11,8 +11,9 @@ sqa_criteria:
     repos:
       sqaaas-web:
         commands:
-        - npm run deploy
+        - npm run build
         container: node
         tox:
           testenv: []
           tox_file: ''
+timeout: '600'
