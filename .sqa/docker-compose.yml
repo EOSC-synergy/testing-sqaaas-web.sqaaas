@@ -1,11 +1,9 @@
 services:
   node:
+    command: sleep infinity
     container_name: node
-    environment: []
-    hostname: sqaaas-web
+    environment: {}
+    hostname: ''
     image: node
-    volumes:
-    - source: ./
-      target: /sqaaas-web
-      type: bind
+    volumes: []
 version: '3.7'
