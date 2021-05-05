@@ -1,9 +1,16 @@
 services:
   node:
+    build:
+      args: {}
+      context: ''
+      dockerfile: .
     command: sleep infinity
-    container_name: node
     environment: {}
-    hostname: ''
+    hostname: sqaaas-web
     image: node
-    volumes: []
+    volumes:
+    - source: ./
+      target: /sqaaas-web
+      type: bind
+    working_dir: /sqaaas-web
 version: '3.7'
