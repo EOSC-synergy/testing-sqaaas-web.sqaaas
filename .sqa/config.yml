@@ -1,13 +1,5 @@
 config:
-  credentials:
-  - id: test1
-    password_var: GIT_PASS_1
-    type: username_password
-    username_var: GIT_USER_1
-  - id: test2
-    password_var: GIT_PASS_2
-    type: username_password
-    username_var: GIT_USER_2
+  credentials: []
   project_repos:
   - branch: ''
     repo: https://github.com/EOSC-synergy/sqaaas-web.git
